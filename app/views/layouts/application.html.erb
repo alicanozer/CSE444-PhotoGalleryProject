@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+
+  lr{
+    font-size: larger;
+    color: red;
+  }
+  b{
+    color: darkblue;
+  }
+
+</style>
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>
+    <% if current_user %>
+        <%= current_user.name %> 's Photo Gallery
+    <% else %>
+        Photo Gallery
+    <% end %>
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <%= yield :head %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= csrf_meta_tag %>
+
+</head>
+<body style="background-image: image('../../../public/images/black-light-background.png');">
+<div align="center">
+  <%= link_to image_tag('Photo-Gallery-Banner.jpg',:height => '32%',width: '1000',align: 'middle'), root_path %>
+
+</div>
+<div id="container">
+
+
+  <div id="header">
+    &nbsp;&nbsp;&nbsp;
+    <% if !current_user %>
+        <%= link_to '  LOGIN', login_path %>
+    <% end %>
+    &nbsp
+    <% if !current_user %>
+        <%= link_to '  REGISTER', new_account_path %>
+    <% end %>
+    <%= breadcrumbs %>
+    <div id="action_links" style="float: right">
+
+
+      <% if current_user %>
+          <strong><%= link_to(current_user.name, 'account') %></strong>
+          <a class="lr"><%= link_to "Logout", logout_path %></a>
+      <% end %>
+
+    </div>
+    <div>
+      <%= form_tag albums_path, {:method => :get, :id => :search} do -%>
+          <input type="text" name="q" class="textfield"/>
+          <input type="submit" value="Search" class="button"/>
+      <% end -%>
+
+
+    </div>
+
+
+    &nbsp;
+    <hr class="seperator"/>
+    <%= yield :action_links %>
+
+
+  </div>
+
+  <div id="content">
+    <p id="notice"><%= flash[:notice] %></p>
+    <%= yield %>
+  </div>
+
+
+</div>
+
+<%= javascript_include_tag 'jquery-1.4.2.js', 'rails', 'ozer' %>
+<%= yield :javascript %>
+
+<div class="a" id="footer">
+
+  <hr class="seperator"/>
+    <div align="center">
+      <%= image_tag('footer.jpg',:height => '32%',width: '1000',align: 'middle') %>
+    </div>
+  <div align="center">
+    <a href="http://www.gtu.edu.tr">Gebze Teknik Üniversitesi - 2016</a>
+  </div>
+
+
+  </div>
+</body>
+</html>

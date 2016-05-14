@@ -1,0 +1,49 @@
+<style type="text/css">
+  strong.bigyellow{
+    font-family: Consolas;
+    font-size: larger;
+    color: #006600;
+  }
+
+</style>
+<table>
+  <tr>
+    <td><b>Name:</b></td>
+    <td><strong class="bigyellow"><%= h @user.name %></strong></td>
+  </tr>
+  <tr>
+    <td><b>Email:</b></td>
+    <td><strong class="bigyellow"> <%= h @user.email %></strong></td>
+  </tr>
+  <tr>
+    <td><b>Login count:</b></td>
+    <td><%= h @user.login_count %></td>
+  </tr>
+  <tr>
+    <td><b>Last request at:</b></td>
+    <td><%= h @user.last_request_at %></td>
+  </tr>
+  <tr>
+    <td><b>Last login at:</b></td>
+    <td><%= h @user.last_login_at %></td>
+  </tr>
+  <tr>
+    <td><b>Current login at:</b></td>
+    <td><%= h @user.current_login_at %></td>
+  </tr>
+  <tr>
+    <td><b>Last login ip:</b></td>
+    <td><%= h @user.last_login_ip %></td>
+  </tr>
+  <tr>
+    <td><b>Current login ip:</b></td>
+    <td><%= h @user.current_login_ip %></td>
+  </tr>
+  <tr>
+    <td><strong style="font-size:24px"><%= link_to 'Edit', edit_account_path %></strong></td>
+    <td><strong style="font-size:24px"><%= link_to 'Logout', logout_path %></strong></td>
+  </tr>
+
+</table>
+
+
