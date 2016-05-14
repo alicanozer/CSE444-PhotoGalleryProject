@@ -27,7 +27,7 @@ group :production do
   # MySQL:
   #gem 'mysql2'
   # PostgreSQL (default on heroku):
-  gem 'pg'
+  #gem 'pg'
 end
 group :test do
   gem 'test-unit'
