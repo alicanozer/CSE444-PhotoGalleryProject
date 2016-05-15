@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails PhotoGalleryProject: development" uuid="ccca03cb-2aca-4bee-b1ac-16212387ab48">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Rails PhotoGalleryProject: test" uuid="efe94bd9-f4c6-4a8b-aaf0-710e99e44035" />
+  </component>
+</project>

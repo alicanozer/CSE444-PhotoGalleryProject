@@ -10,32 +10,6 @@
     </facet>
   </component>
   <component name="ModuleRunConfigurationManager">
-    <configuration default="false" name="Development: PhotoGalleryProject" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-      <module name="PhotoGalleryProject" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="BROWSER_URL" VALUE="http://127.0.0.1:3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Production: PhotoGalleryProject" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="PhotoGalleryProject" />
@@ -61,13 +35,14 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="spec: PhotoGalleryProject" type="RakeRunConfigurationType" factoryName="Rake">
+    <configuration default="false" name="Development: PhotoGalleryProject" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="PhotoGalleryProject" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -76,12 +51,14 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="BROWSER_URL" VALUE="http://127.0.0.1:3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
     <configuration default="false" name="test: PhotoGalleryProject" type="RakeRunConfigurationType" factoryName="Rake">
@@ -109,6 +86,29 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="false" name="spec: PhotoGalleryProject" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="PhotoGalleryProject" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -122,7 +122,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="CFPropertyList (v2.3.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.2.22.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.2.22.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.2.22.2, rbenv: 2.3.0) [gem]" level="application" />
@@ -132,67 +131,33 @@
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="authlogic (v3.4.6, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.12.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.12.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.6.2, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.8, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="excon (v0.49.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v0.9.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.10, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi-compiler (v0.1.3, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fission (v0.5.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog (v1.38.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-aliyun (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-atmos (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-aws (v0.9.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-brightbox (v0.10.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-cloudatcost (v0.1.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-core (v1.39.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-dynect (v0.0.3, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-ecloud (v0.3.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-google (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-json (v1.0.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-local (v0.3.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-openstack (v0.1.5, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-powerdns (v0.1.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-profitbricks (v0.0.5, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-rackspace (v0.1.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-radosgw (v0.0.5, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-riakcs (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-sakuracloud (v1.7.5, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-serverlove (v0.1.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-softlayer (v1.1.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-storm_on_demand (v0.1.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-terremark (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-vmfusion (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-voxel (v0.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-vsphere (v0.6.4, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-xenserver (v0.2.3, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fog-xml (v0.1.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="formatador (v0.2.5, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v3.4.4, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="inflecto (v0.0.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ipaddress (v0.8.3, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v1.5.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kgio (v2.10.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_exiftool (v2.7.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_exiftool_vendored (v9.2.7.v1, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.5.1, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.0.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.5.5, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.0.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.7.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth2 (v1.1.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.3.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-facebook (v3.0.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.4.0, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.3.6, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.18.4, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="power_assert (v0.3.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.7, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.6.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.4, rbenv: 2.3.0) [gem]" level="application" />
@@ -202,22 +167,16 @@
     <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.5, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.5, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.22.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="raindrops (v0.16.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v11.1.2, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rbvmomi (v1.8.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="request_store (v1.3.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="scrypt (v2.1.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.3, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.11, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="test-unit (v3.1.8, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="trollop (v2.1.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.49, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="unicorn (v5.1.0, rbenv: 2.3.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="xml-simple (v1.1.5, rbenv: 2.3.0) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
