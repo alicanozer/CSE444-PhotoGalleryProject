@@ -1,6 +1,3 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
@@ -33,7 +30,7 @@ class ApplicationController < ActionController::Base
   def require_role(roles = [])
     unless current_user && current_user.in_role?(*roles)
       store_location
-      flash[:notice] = "You must have permission to access this page"
+      flash[:notice] = "Sayfayı görebilmek için giriş yapmalısınız!"
       redirect_to account_path
       return false
     end
@@ -49,7 +46,7 @@ class ApplicationController < ActionController::Base
     return false if !require_user
     unless current_user && current_user.has_permission?(*permissions)
       store_location
-      flash[:notice] = "You must have permission to access this page"
+      flash[:notice] = "Bu sayfayı görme yetkiniz yok!"
       redirect_to account_path
       return false
     end
@@ -59,7 +56,7 @@ class ApplicationController < ActionController::Base
   def require_user
     unless current_user
       store_location
-      flash[:notice] = "You must be logged in to access this page"
+      flash[:notice] = "Sayfayı görebilmek için oturum açmalısınız!"
       redirect_to login_path
       return false
     end
@@ -69,7 +66,7 @@ class ApplicationController < ActionController::Base
   def require_no_user
     if current_user
       store_location
-      flash[:notice] = "Already logged in. Please logout"
+      flash[:notice] = "Oturum zaten açık"
       redirect_to account_path
       return false
     end

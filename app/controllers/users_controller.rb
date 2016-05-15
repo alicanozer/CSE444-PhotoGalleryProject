@@ -12,9 +12,9 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       if User.all.length == 1
-        @user.roles << Role.create(:name => 'admin')
+        @user.roles << Role.create(:name => 'admin') #kullanıcıya admin rolü ver
       end
-      flash[:notice] = "Account registered!"
+      flash[:notice] = "Hesap kaydedildi!"
       redirect_back_or_default new_collection_path
     else
       render :action => :new
@@ -30,9 +30,9 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = @current_user # makes our views "cleaner" and more consistent
+    @user = @current_user
     if @user.update_attributes(params[:user])
-      flash[:notice] = "Account updated!"
+      flash[:notice] = "Hesap güncellendi!"
       redirect_to account_path
     else
       render :action => :edit

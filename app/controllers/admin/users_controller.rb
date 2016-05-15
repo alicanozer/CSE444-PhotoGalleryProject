@@ -15,7 +15,7 @@ class Admin::UsersController < Admin::ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:notice] = "Account registered!"
+      flash[:notice] = "Hesap Kaydedildi!"
       redirect_to @user
     else
       render :action => :new
@@ -29,7 +29,7 @@ class Admin::UsersController < Admin::ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      flash[:notice] = "Account updated!"
+      flash[:notice] = "Hesap Güncellendi!"
       redirect_to @user
     else
       render :action => :edit

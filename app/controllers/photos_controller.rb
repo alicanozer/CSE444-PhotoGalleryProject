@@ -13,9 +13,6 @@ class PhotosController < ApplicationController
       @album = Album.find( params[:album_id])
       @photos = @album.photos.find(:all, :order => "photos.id ASC")
     elsif params[:q]
-      #search = params[:q]
-      #search = search.split("AND").map{|q|q.strip}
-      #@photos = Photo.find(:all, :select => 'DISTINCT photos.id, photos.album_id, photos.title, photos.path', :limit => 20, :conditions => {  :tags => {:title => search}}, :joins => 'LEFT OUTER JOIN photo_tags ON photos.id = photo_tags.photo_id LEFT OUTER JOIN tags ON photo_tags.tag_id = tags.id', :include => [:album], :order => "photos.title ASC" )
       params[:q].split(" AND ").each {|q|
         qphotos = Photo.find(:all, :limit => 20, :conditions => [ "photos.description LIKE :q OR photos.title LIKE :q OR photos.id IN ( SELECT photo_id FROM photo_tags LEFT OUTER JOIN tags ON photo_tags.tag_id = tags.id WHERE tags.title = :t) ", { :q => '%' + q + '%', :t => q } ], :include => :album, :order => "photos.id ASC" )
         if @photos
@@ -106,7 +103,7 @@ class PhotosController < ApplicationController
   def update
     @photo = Photo.find( params[:id])
     if @photo.update_attributes(params[:photo])
-      flash[:notice] = "Photo updated!"
+      flash[:notice] = "Fotoğraf güncellendi!"
       if params[:collection_id]
         redirect_to collection_album_photo_path( params[:collection_id], params[:album_id], @photo )
       elsif params[:album_id]
@@ -131,7 +128,7 @@ class PhotosController < ApplicationController
         photo.save
       end
     end
-    flash[:notice] = "Updated photos!"
+    flash[:notice] = "Güncel fotoğraflar!"
     redirect_to photos_path
   end
 

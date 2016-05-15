@@ -6,10 +6,6 @@ class AlbumsController < ApplicationController
     if params[:tag_id]
       @albums = Album.find(:all, :conditions => [ "id IN ( SELECT DISTINCT photos.album_id FROM photos WHERE photos.id IN ( SELECT photo_id FROM photo_tags WHERE photo_tags.tag_id = :q) )", { :q => Tag.find( params[:tag_id] ).id } ], :order => 'title')
     elsif params[:q]
-      #search = params[:q]
-      #search = search.split("AND").map{|q|q.strip}
-      #@albums = Album.find(:all, :select => 'DISTINCT albums.id, albums.title', :limit => 20, :conditions => {  :tags => {:title => search}}, :joins => 'LEFT OUTER JOIN photos ON albums.id = photos.album_id LEFT OUTER JOIN photo_tags ON photos.id = photo_tags.photo_id LEFT OUTER JOIN tags ON photo_tags.tag_id = tags.id', :order => "albums.title ASC" )
-      #@albums = Album.find(:all, :select => 'DISTINCT album_id', :conditions => [ "title LIKE :q OR description LIKE :q OR id IN ( SELECT DISTINCT photos.album_id FROM photos WHERE photos.description LIKE :q OR photos.title LIKE :q OR photos.id IN ( SELECT photo_id FROM photo_tags LEFT OUTER JOIN tags ON photo_tags.tag_id = tags.id WHERE tags.title LIKE :q) )", { :q => '%' + params[:q] + '%' } ], :order => 'title')
       params[:q].split(" AND ").each {|q|
         qphotos = Photo.find(:all, :select => 'DISTINCT album_id', :conditions => [ "description LIKE :q OR title LIKE :q OR id IN ( SELECT photo_id FROM photo_tags LEFT OUTER JOIN tags ON photo_tags.tag_id = tags.id WHERE tags.title LIKE :q)", { :q => '%' + q + '%' } ])
         qalbums = Album.find(:all, :conditions => ['title LIKE :q OR description LIKE :q OR id IN (:ids)', { :ids => qphotos.map{|p|p.album_id}, :q => '%' + q + '%'  }], :order => 'title' )
@@ -56,7 +52,7 @@ class AlbumsController < ApplicationController
     @album = Album.new(params[:album])
 
     if @album.save
-      flash[:notice] = "Album created! Now add some nice photos."
+      flash[:notice] = "Albümünüz oluşturuldu, fotoğraf ekleyebilirsiniz"
       if params[:collection_id]
         @album.collections << Collection.find( params[:collection_id] )
         redirect_to upload_collection_album_photos_path(params[:collection_id], @album )
@@ -75,7 +71,7 @@ class AlbumsController < ApplicationController
   def update
     @album = Album.find( params[:id])
     if @album.update_attributes(params[:album])
-      flash[:notice] = "Album updated!"
+      flash[:notice] = "Albüm Güncellendi!"
       if params[:collection_id]
         redirect_to collection_album_path(params[:collection_id], @album )
       else

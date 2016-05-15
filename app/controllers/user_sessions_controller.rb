@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
-      flash[:notice] = "Login successful!"
+      flash[:notice] = "Giriş başarılı!"
       redirect_back_or_default account_path
     else
       render :new
@@ -18,7 +18,7 @@ class UserSessionsController < ApplicationController
 
   def destroy
     current_user_session.destroy
-    flash[:notice] = "Logout successful!"
+    flash[:notice] = "Çıkış yapıldı!"
     redirect_to root_path
   end
 

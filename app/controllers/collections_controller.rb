@@ -29,7 +29,7 @@ class CollectionsController < ApplicationController
   def create
     @collection = Collection.new(params[:collection])
     if @collection.save
-      flash[:notice] = "Collection created! Now lets add a new album."
+      flash[:notice] = "Koleksiyon oluşturuldu, albüm ekleyebilirsiniz"
       redirect_to new_collection_album_path(@collection)
     else
       render :action => :new
@@ -43,7 +43,7 @@ class CollectionsController < ApplicationController
   def update
     @collection = Collection.find( params[:id])
     if @collection.update_attributes(params[:collection])
-      flash[:notice] = "Collection updated!"
+      flash[:notice] = "Koleksiyon güncellendi!"
       redirect_to @collection
     else
       render :action => :edit
