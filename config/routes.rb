@@ -1,4 +1,4 @@
-Balder::Application.routes.draw do
+Ozer::Application.routes.draw do
   resource :account, :controller => :users
   match "login", :to => "user_sessions#new", :as => :login
   match "authenticate", :to => "user_sessions#create", :as => :authenticate
