@@ -1,6 +1,6 @@
 #makro tanımlamaları burada olsun
 ENV['STORAGE_PATH'] = "uploads" if ENV['STORAGE_PATH'].nil?
-ENV['LOGIN_REQUIRE'] = 'true'
+ENV['PRIVATE'] = 'true'
 ENV['TITLE'] = 'PHOTO GALLERY'
 ENV['HEROKU']           = 'true'
 #ENV['S3_KEY']           = ''
