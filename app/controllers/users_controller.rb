@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   # before_filter :check_user_logined
- # before_filter :require_no_user, :only => [:new, :create]
+  before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => [:show, :edit, :update, :destroy]
   skip_filter :setup
 
