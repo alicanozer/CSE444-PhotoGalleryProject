@@ -1,4 +1,4 @@
-Ozer::Application.routes.draw do
+Balder::Application.routes.draw do
   resource :account, :controller => :users
   match "login", :to => "user_sessions#new", :as => :login
   match "authenticate", :to => "user_sessions#create", :as => :authenticate
@@ -6,8 +6,6 @@ Ozer::Application.routes.draw do
 
   resources :authentications
   match '/auth/:provider/callback' => 'authentications#create'
-
-
 
   resources :photos do
     collection do
@@ -59,6 +57,5 @@ Ozer::Application.routes.draw do
   resources :users, :controller => "admin/users"
 
   root :to => "collections#index"
-  #root :to => "users#create"
 
 end
