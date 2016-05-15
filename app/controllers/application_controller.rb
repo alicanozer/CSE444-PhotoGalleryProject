@@ -12,12 +12,12 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def setup #database bossa yeni kisi ekranı
+  def setup
     redirect_to new_account_path if User.all.length == 0
   end
 
-  def check_user_logined
-    require_user if ENV['LOGIN_REQUIRE'] == 'true'
+  def check_public_access
+    require_user if ENV['PRIVATE'] == 'true'
   end
 
   def current_user_session
@@ -60,7 +60,7 @@ class ApplicationController < ActionController::Base
     unless current_user
       store_location
       flash[:notice] = "You must be logged in to access this page"
-      redirect_to new_account_path#alican login_path
+      redirect_to login_path
       return false
     end
     return true

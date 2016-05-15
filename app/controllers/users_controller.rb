@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
-  before_filter :check_user_logined
+  before_filter :check_public_access
   before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => [:show, :edit, :update, :destroy]
   skip_filter :setup
 
   def new
     @user = User.new
-
   end
 
   def create
@@ -24,7 +23,6 @@ class UsersController < ApplicationController
 
   def show
     @user = @current_user
-  #  redirect_back_or_default collection_albums_path
   end
 
   def edit

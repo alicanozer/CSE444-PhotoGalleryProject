@@ -11,7 +11,6 @@ class UserSessionsController < ApplicationController
     if @user_session.save
       flash[:notice] = "Login successful!"
       redirect_back_or_default account_path
-      #redirect_back_or_default users_path #aslında collection path a gitmesi gerek
     else
       render :new
     end
