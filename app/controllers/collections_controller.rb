@@ -3,7 +3,7 @@ class CollectionsController < ApplicationController
   before_filter :require_role_admin, :only => [:new, :create, :edit, :update, :destroy]
 
   def index
-    @collections = Collection.find("owner = ?",@current_user.owner, :order => 'title')
+    @collections = Collection.where(owner: @current_user.name)
     respond_to do |format|
       format.html
       format.json  { render :json => @collections }
@@ -32,7 +32,7 @@ class CollectionsController < ApplicationController
   def create
     @collection = Collection.new(params[:collection])
     if @collection.save
-      @collection.owner=@current_user
+      @collection.owner = @current_user.name
       flash[:notice] = "Koleksiyon oluşturuldu, albüm ekleyebilirsiniz"
       redirect_to new_collection_album_path(@collection)
     else
