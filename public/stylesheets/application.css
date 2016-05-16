@@ -283,10 +283,11 @@ caption {
 /* @end */
 
 #container {
-    width: 995px;
-    height: 550px;
+    width: 990px;
+    height: 590px;
     margin: 0 auto;
 }
+
 
 div#header h1 {
     text-transform: uppercase;
