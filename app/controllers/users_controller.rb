@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       if User.all.length > 0
-        @user.roles << Role.create(:name => 'admin') #kullanıcıya admin rolü ver
+        @user.roles << Role.create(:name => @current_user) #kullanıcıya admin rolü ver
       end
       flash[:notice] = "Hesap kaydedildi!"
       redirect_back_or_default new_collection_path
