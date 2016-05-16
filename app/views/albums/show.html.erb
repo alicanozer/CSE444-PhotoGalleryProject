@@ -1,5 +1,6 @@
 <h2><%= @album.title %></h2>
-
+<p><%= @album.description %></p>
+<hr class="seperator"/>
 <div id="multipleimages">
   <table>
     <% count = 0.0 %>
@@ -18,7 +19,7 @@
   </table>
 </div>
 
-<p><%= @album.description %></p>
+
 
 <% unless @album.photo_tags.empty? %>
     <p>Etikleri:
@@ -27,9 +28,6 @@
       <% end %>
     </p>
 <% end %>
-
-    <p><%= @album.address %></p>
-    <p><%= @album.note %></p>
 
 <%= content_for :action_links do %>
     <% if params[:collection_id] %>

@@ -1,9 +1,9 @@
 <h2><%= h @collection.title %></h2>
-<p><%= h @collection.description %></p>
-
+<p><i><%= h @collection.description %></i></p>
+<hr class="seperator"/>
 <% for album in @albums %>
     <div class="row">
-      <div class="title">
+      <div class="title" style="horiz-align: center;  vert-align: middle;">
         <%= render :partial => "photos/thumb", :locals => {:photo => album.photos.first} unless album.photos.empty? %>
         <p><%= link_to album.title, collection_album_path(@collection, album) %></p>
       </div>
