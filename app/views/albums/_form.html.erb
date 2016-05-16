@@ -11,15 +11,12 @@
 <%= form.hidden_field :latitude %>
 <%= form.hidden_field :longitude %>
 
-<%= form.label :title, :Title, {:class => 'big'} %><br/>
+<%= form.label :title, :'Başlık', {:class => 'big'} %><br/>
 <%= form.text_field :title, {:class => 'big'} %><br/>
 
-<%= form.label :description %><br/>
+<%= form.label :description, 'Açıklama' %><br/>
 <%= form.text_area :description %><br/>
 
-<%= form.label :tags %><br/>
+<%= form.label :tags,'Etiketler(Aralarına Boşluk Bırak)' %><br/>
 <%= form.text_field :tags, {:autocomplete => "off", :class => 'tag_list', :value => (@album.tags.map { |tag| tag.title }.join(" ") unless @album.tags.nil?)} %>
 <br/>
-
-<br/>
-Contains: <%= @album.photos.count %> photos<br/>
