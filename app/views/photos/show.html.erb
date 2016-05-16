@@ -4,13 +4,13 @@
   <div id="navigation">
     <p class="links">
       <% unless @previous.nil? %>
-          <%= link_to "Previous", [@photo.album.collections.first, @photo.album, @previous] %>
+          <%= link_to "Önceki", [@photo.album.collections.first, @photo.album, @previous] %>
           <% unless @next.nil? %>
               |
           <% end %>
       <% end %>
       <% unless @next.nil? %>
-          <%= link_to "Next", [@photo.album.collections.first, @photo.album, @next] %>
+          <%= link_to "Sonraki", [@photo.album.collections.first, @photo.album, @next] %>
       <% end %>
     </p>
   </div>
@@ -26,9 +26,9 @@
   <%= content_for :action_links do %>
 
           <% if params[:collection_id] %>
-              <%= link_to "Edit photo", edit_collection_album_photo_path(params[:collection_id], params[:album_id], @photo) %>
+              <%= link_to "Düzenle", edit_collection_album_photo_path(params[:collection_id], params[:album_id], @photo) %>
           <% else %>
-              <%= link_to "Edit photo", edit_photo_path(@photo) %>
+              <%= link_to "Düzenle", edit_photo_path(@photo) %>
           <% end %>
 
 <% end %>

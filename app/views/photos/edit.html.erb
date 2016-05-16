@@ -1,4 +1,4 @@
-<h1>Edit Photo</h1>
+<h1>Fotoğrafı Düzenle</h1>
 
 <%= image_tag @photo.file.preview.url %>
 
@@ -7,11 +7,11 @@
     <%= hidden_field_tag :album_id, params[:album_id] %>
     <%= f.error_messages %>
     <%= render :partial => "form", :object => f %>
-    <%= f.submit "Update" %>
+    <%= f.submit "Güncelle" %>
 <% end %>
 
 <%= content_for :action_links do %>
-    <%= link_to("Delete photo", {:action => "destroy", :id => @photo, :collection_id => params[:collection_id]},
-                :confirm => "Are you sure?",
+    <%= link_to("Bunu sil", {:action => "destroy", :id => @photo, :collection_id => params[:collection_id]},
+                :confirm => "Silinsin Mi?",
                 :method => :delete) %>
 <% end %>

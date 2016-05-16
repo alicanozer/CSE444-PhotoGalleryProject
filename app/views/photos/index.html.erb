@@ -1,6 +1,6 @@
 <ul><%= render :partial => 'photos/thumb', :collection => @photos, :as => :photo %></ul>
 
 <%= content_for :action_links do %>
-    <%= link_to "Albums containing photos tagged: #{params[:q]}", albums_path(:q => params[:q]) if params[:q] %>
-    <%= link_to "All photos tagged: #{params[:tag_id]}", tag_photos_path(params[:tag_id]) if params[:tag_id] && params[:album_id] %>
+    <%= link_to "Etiketi içeren albümlerde : #{params[:q]}", albums_path(:q => params[:q]) if params[:q] %>
+    <%= link_to "Sadece fotoğraflarda : #{params[:tag_id]}", tag_photos_path(params[:tag_id]) if params[:tag_id] && params[:album_id] %>
 <% end %>
