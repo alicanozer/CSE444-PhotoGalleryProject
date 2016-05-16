@@ -26,12 +26,13 @@ class CollectionsController < ApplicationController
 
   def new
     @collection = Collection.new
-    @collection.owner=@current_user
+
   end
 
   def create
     @collection = Collection.new(params[:collection])
     if @collection.save
+      @collection.owner=@current_user
       flash[:notice] = "Koleksiyon oluşturuldu, albüm ekleyebilirsiniz"
       redirect_to new_collection_album_path(@collection)
     else
