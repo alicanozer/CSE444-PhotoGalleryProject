@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
-      flash[:notice] = "Giriş başarılı!"
+      flash[:notice] = "Giriş Başarılı!"
       redirect_back_or_default account_path
     else
       render :new

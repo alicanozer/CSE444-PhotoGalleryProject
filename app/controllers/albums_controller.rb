@@ -40,7 +40,6 @@ class AlbumsController < ApplicationController
       format.html
       format.json  { render :json => @album }
       format.xml  { render :xml => @album }
-      format.pdf { render :pdf => @album.title }
     end
   end
 
