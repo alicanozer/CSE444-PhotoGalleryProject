@@ -1,17 +1,15 @@
-<%= form_for @user_session, :url => authenticate_path do |f| %>
-    <section>
-      <span></span>
-      <h1>Üye Girişi</h1>
-      <form>
-        <%= f.error_messages %>
-        <%= f.label :email %><br/>
-        <%= f.text_field :email %><br/>
-        <%= f.label :password %><br/>
-        <%= f.password_field :password %><br/>
-      </form>
-      <%= f.submit "Giriş Yap" %>
-      <h2>
-        <%= f.check_box :remember_me %><%= f.label :remember_me %><br/>
-      </h2>
-    </section>
+<h1>Giriş Yap</h1>
+
+<%= form_for @user_session, :url => authenticate_path do |f|  %>
+    <%= f.error_messages %>
+    <%= f.label :email %><br/>
+    <%= f.text_field :email , :html => {:class => "input"} %><br/>
+    <br/>
+    <%= f.label :password %><br/>
+    <%= f.password_field :password, :html => {:class=> "input"}%><br/>
+    <br/>
+    <%= f.check_box :remember_me %><%= f.label :remember_me %><br/>
+    <br/>
+    <%= f.submit "Giriş Yap" %>
+
 <% end %>
