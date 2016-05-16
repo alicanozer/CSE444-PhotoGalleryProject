@@ -4,8 +4,9 @@
 <%= form.label :email %><br/>
 <%= form.text_field :email %><br/>
 <br/>
-<%= form.label :password, form.object.new_record? ? nil : "Parola Değiştir" %><br/>
+<%= form.label :password, 'Parola' %><br/>
 <%= form.password_field :password %><br/>
 <br/>
-<%= form.label :password_confirmation %><br/>
+<%= form.label :password_confirmation, 'Parola Tekrar' %><br/>
 <%= form.password_field :password_confirmation %><br/>
+<br/>
