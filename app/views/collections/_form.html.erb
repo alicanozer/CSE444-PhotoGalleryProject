@@ -26,13 +26,13 @@
     <p class="clear">
       <%
         grouped_options = [
-            ['Available albums', [['Choose album to add', '']]],
-            ['Not used', Album.unused.map { |album| [album.title, album.id] }],
-            ['In use', Album.used.map { |album| [album.title, album.id] }]
+            ['Uygun Albümler', [['Buraya albüm ekle', '']]],
+            ['Kullanımda Değil', Album.unused.map { |album| [album.title, album.id] }],
+            ['Kullanımda', Album.used.map { |album| [album.title, album.id] }]
         ]
         grouped_options_for_select(grouped_options)
       %>
-      <%= select_tag 'available_albums', grouped_options_for_select(grouped_options) %>
+      <%= select_tag 'Buraya albüm ekle', grouped_options_for_select(grouped_options) %>
     </p>
 
 <% end %>
