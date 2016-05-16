@@ -17,7 +17,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>
     <% if current_user %>
-        <%= current_user.name %> 's Photo Gallery
+        <%= current_user.name %> Galerisi
     <% else %>
         Photo Gallery
     <% end %>
@@ -30,9 +30,8 @@
   <%= csrf_meta_tag %>
 
 </head>
-<!-- <body style="background-image: image('../../../public/images/black-light-background.png');"> -->
 <div align="center">
-  <%= link_to image_tag('/header.jpg',align: 'middle'), root_path %>
+  <%= link_to image_tag('/up.JPG',align: 'middle'), root_path %>
 
 </div>
 <div id="container">
@@ -89,7 +88,7 @@
 
   <hr class="seperator"/>
     <div align="center">
-      <%= image_tag('footer.jpg',:height => '32%',width: '1000',align: 'middle') %>
+      <%= image_tag('/down.JPG',align: 'middle') %>
     </div>
   <div align="center">
     <a href="http://www.gtu.edu.tr">Gebze Teknik Üniversitesi - 2016</a>
