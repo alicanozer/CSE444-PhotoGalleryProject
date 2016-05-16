@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130119020645) do
+ActiveRecord::Schema.define(:version => 201605162223) do
 
   create_table "albums", :force => true do |t|
     t.string   "title",       :null => false
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20130119020645) do
   add_index "collection_albums", ["collection_id"], :name => "index_collection_albums_on_collection_id"
 
   create_table "collections", :force => true do |t|
+#    t.string   "owner",       :null => false #user isolation
     t.string   "title",       :null => false
     t.string   "description"
     t.datetime "created_at",  :null => false

@@ -5,18 +5,17 @@ module ApplicationHelper
     levels.delete_at(0)
 
     #links = "You are here: "
-    links = content_tag('a', "ANASAYFA", :href => root_path) if include_home
+    links = content_tag('a', "Giriş", :href => root_path) if include_home
 
     nocrumb = ["collections", "albums", "photos", "tags", "new", "edit", "tags"]
 
     levels.each_with_index do |level, index|
-      level = level.gsub(/^[0-9]+\-/, "") #if levels[index-1] == "photos"
+      level = level.gsub(/^[0-9]+\-/, "")
       level = level.gsub("-", " ")
       if index+1 == levels.length
-        #links += " #{sep} #{level.upcase}" unless nocrumb.include?(level)
       elsif !nocrumb.include?(level)
         links += " " + sep + " "
-        links += content_tag('a', level.upcase, :href => '/'+levels[0..index].join('/'))
+        links += content_tag('a', level, :href => '/'+levels[0..index].join('/'))
       end
     end
 
