@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      if User.all.length == 1
+      if User.all.length > 0
         @user.roles << Role.create(:name => 'admin') #kullanıcıya admin rolü ver
       end
       flash[:notice] = "Hesap kaydedildi!"
