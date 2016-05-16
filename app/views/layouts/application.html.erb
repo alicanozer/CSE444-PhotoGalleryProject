@@ -14,6 +14,7 @@
 
 
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>
     <% if current_user %>
@@ -30,6 +31,7 @@
   <%= csrf_meta_tag %>
 
 </head>
+<body style="background-color: mediumaquamarine;">
 <div align="center">
   <%= link_to image_tag('/up.JPG',align: 'middle', height: '245px'), root_path %>
 
@@ -51,7 +53,7 @@
 
 
       <% if current_user %>
-          <strong><%= link_to(current_user.name, 'HESAP') %></strong>
+          <strong><%= link_to(current_user.name, 'account') %></strong>
           <a class="lr"><%= link_to "Çıkış Yap", logout_path %></a>
       <% end %>
 
@@ -61,8 +63,6 @@
           <input type="text" name="q" class="textfield"/>
           <input type="submit" value="Ara(tag)" class="button"/>
       <% end -%>
-
-
     </div>
 
 
@@ -73,11 +73,10 @@
 
   </div>
 
-  <div id="content">
-    <p id="notice"><%= flash[:notice] %></p>
-    <%= yield %>
-  </div>
-
+<div id="content">
+  <p id="notice"><%= flash[:notice] %></p>
+  <%= yield %>
+</div>
 
 </div>
 
