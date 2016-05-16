@@ -3,7 +3,7 @@ class CollectionsController < ApplicationController
   before_filter :require_role_admin, :only => [:new, :create, :edit, :update, :destroy]
 
   def index
-    @collections = Collection.find("owner = ?",@current_user, :order => 'title')
+    @collections = Collection.find("owner = ?",@current_user.owner, :order => 'title')
     respond_to do |format|
       format.html
       format.json  { render :json => @collections }
@@ -19,7 +19,6 @@ class CollectionsController < ApplicationController
         format.html
         format.json  { render :json => @collection }
         format.xml  { render :xml => @collection }
-        format.pdf { render :pdf => @collection.title }
       end
     end
   end
