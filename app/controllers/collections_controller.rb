@@ -14,11 +14,13 @@ class CollectionsController < ApplicationController
   def show
     @collection = Collection.find( params[:id] )
     @albums = @collection.albums.find(:all, :order => 'title')
-    respond_to do |format|
-      format.html
-      format.json  { render :json => @collection }
-      format.xml  { render :xml => @collection }
-      format.pdf { render :pdf => @collection.title }
+    if @current_user == @collection.owner
+      respond_to do |format|
+        format.html
+        format.json  { render :json => @collection }
+        format.xml  { render :xml => @collection }
+        format.pdf { render :pdf => @collection.title }
+      end
     end
   end
 
