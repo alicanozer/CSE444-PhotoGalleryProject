@@ -31,19 +31,6 @@ class PhotosController < ApplicationController
     end
   end
 
-  def untouched
-    if params[:album_id]
-      @album = Album.find( params[:album_id])
-      @photos = @album.photos.untouched
-    else
-      @photos = Photo.untouched()
-    end
-    respond_to do |format|
-      format.html
-      format.json  { render :json => @photos }
-      format.xml  { render :xml => @photos }
-    end
-  end
 
   def show
     @photo = Photo.find( params[:id] )

@@ -29,6 +29,7 @@ class CollectionsController < ApplicationController
 
   end
 
+
   def create
     @collection = Collection.new(params[:collection])
     if @collection.save
