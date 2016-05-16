@@ -2,13 +2,13 @@
     <%= javascript_include_tag "tag/tag" -%>
 <% end %>
 <%= hidden_field_tag :all_tags, @tags %>
-<%= form.label :title %><br/>
+<%= form.label :title,'Başlık' %><br/>
 <%= form.text_field :title %><br/>
 <br/>
-<%= form.label :tag_list %><br/>
+<%= form.label :tag_list,'Etiketler' %><br/>
 <%= form.text_field :tag_list, {:autocomplete => "off", :class => 'tag_list'} %><br/>
 <br/>
 <%= form.label :description %><br/>
-<%= form.text_area :description %><br/>
+<%= form.text_area :description,size:"40x10" %><br/>
 <br/>
 <p>On disk: ~/<%= @photo.file.path %></p>

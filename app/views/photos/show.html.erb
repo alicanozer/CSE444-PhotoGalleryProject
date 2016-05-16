@@ -14,11 +14,11 @@
       <% end %>
     </p>
   </div>
-  <p><%= link_to_if @next, image_tag(@photo.file.single.url, height: 500,width: 500), [@photo.album.collections.first, @photo.album, @next] %></p>
+  <p><%= link_to_if @next, image_tag(@photo.file.single.url, height: 400,width: 400), [@photo.album.collections.first, @photo.album, @next] %></p>
 </div>
 
 <p><%= @photo.description %></p>
-<p>Tagged with:
+<p>Etiketler:
   <% for tag in @photo.tags.map { |tag| tag.title }.sort %>
       <%= link_to tag, tag_photos_path(tag) %>
   <% end %>
