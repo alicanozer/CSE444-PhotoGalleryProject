@@ -21,17 +21,9 @@
 <p><%= @album.description %></p>
 
 <% unless @album.photo_tags.empty? %>
-    <p>Tagged with:
+    <p>Etikleri:
       <% for tag in @album.photo_tags.map { |tag| tag.title }.sort %>
           <%= link_to tag, album_tag_photos_path(@album, tag) %>
-      <% end %>
-    </p>
-<% end %>
-
-<% unless @album.collections.empty? %>
-    <p>Part of:
-      <% for collection in @album.collections.find(:all, :order => 'title') %>
-          <%= link_to collection.title, collection_path(collection) %>
       <% end %>
     </p>
 <% end %>
@@ -41,12 +33,12 @@
 
 <%= content_for :action_links do %>
     <% if params[:collection_id] %>
-        <%= link_to "Edit album", edit_collection_album_path(params[:collection_id], @album) %> |&nbsp;
-        <%= link_to "Edit all photos", edit_multiple_collection_album_photos_path(params[:collection_id], @album) %> |&nbsp;
-        <%= link_to "Add photos", upload_collection_album_photos_path(params[:collection_id], @album) %>
+        <%= link_to "Albümü Düzenle", edit_collection_album_path(params[:collection_id], @album) %> |&nbsp;
+        <%= link_to "Fotoğrafları Düzenle", edit_multiple_collection_album_photos_path(params[:collection_id], @album) %> |&nbsp;
+        <%= link_to "Fotoğraf Ekle", upload_collection_album_photos_path(params[:collection_id], @album) %>
     <% else %>
-        <%= link_to "Edit album", edit_album_path(@album) %> |&nbsp;
-        <%= link_to "Edit all photos", edit_multiple_album_photos_path(@album) %> |&nbsp;
-        <%= link_to "Add photos", upload_album_photos_path(@album) %>
+        <%= link_to "Albümü Düzenle", edit_album_path(@album) %> |&nbsp;
+        <%= link_to "Fotoğrafları Düzenle", edit_multiple_album_photos_path(@album) %> |&nbsp;
+        <%= link_to "Fotoğraf Ekle", upload_album_photos_path(@album) %>
     <% end %>
 <% end %>
