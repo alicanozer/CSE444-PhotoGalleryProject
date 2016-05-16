@@ -11,6 +11,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 body {
     line-height: 1.5;
+    background-color: mediumaquamarine;
 }
 
 table {
@@ -308,7 +309,6 @@ div#header {
 
 div#content {
     clear: both;
-    background-color: #336699;
 }
 
 div#footer {
@@ -443,11 +443,13 @@ DIV#map_canvas {
 
 DIV#breadcrumb {
     float: left;
+    font-size: 22px;
 }
 
 DIV#action_links {
     float: right;
     clear: right;
+    text-decoration: blink;
 }
 
 td {
@@ -456,6 +458,7 @@ td {
 
 p#notice {
     color: green;
+    font-size: 22px;
 }
 
 DIV#collection_albums {
