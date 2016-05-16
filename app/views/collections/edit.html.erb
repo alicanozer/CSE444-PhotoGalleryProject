@@ -3,11 +3,11 @@
 <%= form_for @collection do |f| %>
     <%= f.error_messages %>
     <%= render :partial => "form", :object => f %>
-    <%= f.submit "Update" %>
+    <%= f.submit "Güncelle" %>
 <% end %>
 
 <%= content_for :action_links do %>
-    <%= link_to("Delete this collection", {:action => "destroy", :id => @collection},
-                :confirm => "Are you sure you want to delete this collection?",
+    <%= link_to("Bunu Sil", {:action => "destroy", :id => @collection},
+                :confirm => "Silinsin Mi?",
                 :method => :delete) %>
 <% end %>
