@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01c7ea7a-0c4b-4fd7-982f-89a22218f143" name="Default" comment="uploader runs">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/header.jpg" />
+    <list default="true" id="01c7ea7a-0c4b-4fd7-982f-89a22218f143" name="Default" comment="bi bitmedi şu ui&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/header.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/albums/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/albums/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="PhotoGalleryProject.iws" />
@@ -71,8 +70,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="395">
+              <caret line="90" column="63" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -681,28 +680,7 @@
       <workItem from="1463217697778" duration="8512000" />
       <workItem from="1463340389775" duration="2871000" />
       <workItem from="1463344520603" duration="7004000" />
-      <workItem from="1463388020336" duration="10065000" />
-    </task>
-    <task id="LOCAL-00004" summary="resolving heroku errors">
-      <created>1463345603780</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1463345603780</updated>
-    </task>
-    <task id="LOCAL-00005" summary="resolving heroku errors">
-      <created>1463345794738</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1463345794738</updated>
-    </task>
-    <task id="LOCAL-00006" summary="resolving heroku errors">
-      <created>1463346183740</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1463346183740</updated>
+      <workItem from="1463388020336" duration="11417000" />
     </task>
     <task id="LOCAL-00007" summary="resolved heroku errors">
       <created>1463346507697</created>
@@ -1026,11 +1004,32 @@
       <option name="project" value="LOCAL" />
       <updated>1463416147363</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="bi bitmedi şu ui&#10;">
+      <created>1463416704166</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1463416704167</updated>
+    </task>
+    <task id="LOCAL-00054" summary="bi bitmedi şu ui&#10;">
+      <created>1463418116710</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1463418116711</updated>
+    </task>
+    <task id="LOCAL-00055" summary="bi bitmedi şu ui&#10;">
+      <created>1463418204818</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1463418204818</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33006000" />
+    <option name="totallyTimeSpent" value="34358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,7 +1095,8 @@
     <MESSAGE value="ui fix" />
     <MESSAGE value="albums ui fix" />
     <MESSAGE value="albums ui fix&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="albums ui fix&#10;" />
+    <MESSAGE value="bi bitmedi şu ui&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="bi bitmedi şu ui&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1105,13 +1105,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/ozer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1500,10 +1493,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/header.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="395">
+          <caret line="90" column="63" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
