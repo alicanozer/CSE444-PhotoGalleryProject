@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<style type="text/css">
 
-  lr {
-    font-size: larger;
-    color: red;
-  }
 
-  b {
-    color: darkblue;
-  }
-
-</style>
 
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>
     <% if current_user %>
         <%= current_user.name %> Galerisi
     <% else %>
-        Fotoğraf Galerisi
+        Photo Gallery
     <% end %>
   </title>
   <meta name="viewport" content="width=device-width">
@@ -28,26 +19,107 @@
   <%= yield :head %>
   <%= stylesheet_link_tag 'application' %>
   <%= csrf_meta_tag %>
+
+  <style type="text/css">
+
+    lr{
+      font-size: larger;
+      color: red;
+    }
+    b{
+      color: darkblue;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 5px;
+      background: rgba(0, 0, 0, 0.3);
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 13px;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+      -webkit-transition: box-shadow .5s ease;
+      -moz-transition: box-shadow .5s ease;
+      -o-transition: box-shadow .5s ease;
+      -ms-transition: box-shadow .5s ease;
+      transition: box-shadow .5s ease;
+    }
+
+    input:focus {
+      box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .buttonStyle {
+      width: 100%;
+      margin-bottom: 5px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      color: #fff;
+      background-color: #7F1734;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+    }
+
+    .buttonStyle:hover {
+      background: darkgreen
+    }
+
+  </style>
 </head>
 <body>
 <div align="center">
-  <%= link_to image_tag('/up.JPG', align: 'middle', width: '1000px', height: '150px'), root_path %>
+  <%= link_to image_tag('/up.JPG',align: 'middle',width: '1000px', height: '150px'), root_path %>
 
 </div>
 <div id="container">
-  <% if current_user %>
-      <%= breadcrumbs %>
-  <% end %>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <% if current_user %>
 
-      <a class="lr"><%= link_to "Çıkış Yap", logout_path %></a>
+
+  <div id="header">
+    &nbsp;&nbsp;&nbsp;
+    <% if !current_user %>
+        <%= link_to '  Giriş', login_path %>
+    <% end %>
+    &nbsp
+    <% if !current_user %>
+        <%= link_to '  Kaydol', new_account_path %>
+    <% end %>
+    <%= breadcrumbs %>
+    <div id="action_links" style="float: right">
+
+
+      <% if current_user %>
+          <strong><%= link_to(current_user.name, 'account') %></strong>
+          <a class="lr"><%= link_to "Çıkış Yap", logout_path %></a>
+      <% end %>
+
+    </div>
+    <% if current_user %>
+        <div>
+          <%= form_tag albums_path, {:method => :get, :id => :search} do -%>
+              <input type="text" name="q" class="input"/>
+              <input type="submit" value="Ara(tag)" class="buttonStyle"/>
+          <% end %>
+        </div>
+
   <% end %>
 
-  &nbsp;
-  <%= yield :action_links %>
-  &nbsp;
-  <%= yield %>
+
+    &nbsp;
+    <hr class="seperator"/>
+    <%= yield :action_links %>
+
+
+  </div>
+
+  <div id="content">
+    <p id="notice"><%= flash[:notice] %></p>
+    <%= yield %>
+  </div>
 
 </div>
 

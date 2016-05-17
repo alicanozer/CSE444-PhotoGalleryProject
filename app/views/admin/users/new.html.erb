@@ -1,7 +1,23 @@
-<h1>Kayıt Ol</h1>
 
-<%= form_for @user, :url => account_path do |f| %>
-    <%= f.error_messages %>
-    <%= render :partial => "form", :object => f %>
-    <%= f.submit "Kayıt" %>
-<% end %>
+<body>
+
+<div class="register">
+
+  <h1>Kayıt Ol</h1>
+
+
+  <%= form_for @user, :url => account_path do |f| %>
+      <div style="color: #000000; text-align: center; font-kerning: auto"><%= f.error_messages %></div>
+      <%= render :partial => "form", :object => f %>
+
+      <%= f.submit "Kayıt" , :class => 'buttonStyle'%>
+
+  <% end %>
+  <%= form_for @user, :url => login_path do |f| %>
+
+      <%= f.submit "Giriş", :class => 'buttonStyle' %>
+
+  <% end %>
+</div>
+
+</body>

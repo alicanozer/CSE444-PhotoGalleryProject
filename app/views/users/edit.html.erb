@@ -1,9 +1,16 @@
-<h1>Hasabı Düzenle</h1>
 
+<h1>Hasabı Düzenle</h1>
+<br/>
 <%= form_for @user do |f| %>
     <%= f.error_messages %>
     <%= render :partial => "form", :object => f %>
-    <%= f.submit "Güncelle" %>
+    <%= f.submit "Güncelle", :class => 'buttonStyle' %>
 <% end %>
 
-<br/><%= link_to "Profilim", account_path %>
+
+
+<%= content_for :action_links do %>
+    <%= link_to("Hesabı sil", {:action => "destroy", :id => @user},
+                :confirm => "Hesabı silmek istediğinize eminmisiniz?",
+                :method => :delete) %>
+<% end %>
