@@ -75,6 +75,10 @@
 <div class="login">
 <h1>Giriş Yap</h1>
 
+
+
+
+
 <%= form_for @user_session, :url => authenticate_path do |f| %>
     <%= f.error_messages %>
     <%= f.label :email %><br/>
@@ -86,6 +90,9 @@
     <%= f.check_box :remember_me %><%= f.label :'Beni Hatırla' %><br/>
     <br/>
     <%= f.submit "Giriş Yap" %>
+      <% if !current_user %>
+          <%= link_to '  Kaydol', new_account_path %>
+      <% end %>
 
 <% end %>
 </div>
