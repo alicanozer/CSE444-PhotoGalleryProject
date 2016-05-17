@@ -86,9 +86,13 @@
     <br/>
     <%= f.label :'Parola' %><br/>
     <%= f.password_field :password %><br/>
-    <br/>
-    <%= f.check_box :remember_me %><%= f.label :'Beni Hatırla' %><br/>
-    <br/>
+      <br/>
+      <table>
+       <tr><td></td><td></td><td><td><%= f.label :'Beni Hatırla' %></td><td><%= f.check_box :remember_me %></td>
+         </td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+      </table>
+
     <%= f.submit "Giriş Yap" %>
       <input type="button" value="Kaydol" onclick="window.location.href='account/new'">
 
