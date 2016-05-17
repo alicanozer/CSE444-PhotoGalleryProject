@@ -3643,3 +3643,1048 @@ Processing by PhotosController#show as HTML
   [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2016-05-15 20:18:37.443980', "perishable_token" = 'UekYPUUt2fudEg1xXg4', "updated_at" = '2016-05-15 20:18:37.445720' WHERE "users"."id" = 1[0m
   [1m[35m (7.0ms)[0m  commit transaction
 Completed 200 OK in 34.1ms (Views: 19.5ms | ActiveRecord: 9.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-17 22:43:37 +0300
+Processing by CollectionsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :check_public_access rendered or redirected
+Completed 302 Found in 221.2ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 22:43:38 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 29.8ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 22:44:00 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPTtpVI5QzhgQWz/BzClWxOpzw4w5/x2i9fuXAAoybw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (9.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23.4ms (Views: 9.0ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 22:45:07 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPTtpVI5QzhgQWz/BzClWxOpzw4w5/x2i9fuXAAoybw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 158.2ms (Views: 9.2ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 22:46:38 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPTtpVI5QzhgQWz/BzClWxOpzw4w5/x2i9fuXAAoybw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 23.7ms (Views: 16.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-17 22:58:59 +0300
+Processing by CollectionsController#index as HTML
+  [1m[35mUser Load (3.4ms)[0m  SELECT "users".* FROM "users" 
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :check_public_access rendered or redirected
+Completed 302 Found in 20.9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 22:58:59 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 38.1ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 22:59:00 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 24.8ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 22:59:45 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 25.6ms (Views: 20.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:00:48 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 31.2ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:01:05 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (8.1ms)
+  Rendered users/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 74.6ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:01:06 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (1.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'fe3dd4b8ca61b1a92d5539d5f5a7115437c4767d16fec7e935cac6ac78b48a67957fb50d14ad4bb5b1ae0f8f21ac212ca77d205e9b782912dbbdb28f5f147490' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'yFICicYxQniJIiyHzD0v' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 275.7ms (Views: 10.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:01:33 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'ef1882cd36f32d649c6ea05d3fbfee9ee9a31efc11578fea03f4cdf4e4ed3150f8f2514b0ec985b4aa704016abc51b872abe9574d4214cac817a46524c6d794d' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'Z0aG6wENbOzoL4AWefUG' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 50.1ms (Views: 16.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:02:51 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (6.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (2.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'e1697cd6aaf745e0b8d2906d656f32f3a6cba0a7dd6ef00f61193ee4dc81583855a0f2261bba618b940233a134a6e6ef1c54661a3fae63ce45923a010fe9fc4c' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'Q8W7NTqxolNdU1e8Xsc' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (10.2ms)
+  Rendered users/new.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 329.5ms (Views: 105.4ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:03:07 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (4.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '867e97b7705fa73fa6f46381b82f21496fe36696662f09064d6328492254ab993c0c583a716031ea3c56bf214cc245221c216effa34dd0c8fddda94f8e5a5ec3' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '6c8p3BAWF3PfYav1x' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (5.8ms)
+  Rendered users/new.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 101.6ms (Views: 62.3ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:03:24 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (3.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.7ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'cb9ddeedcc95030ccf56c5bdf8f517b8de7bccc236cd160c6a320ad85914468ccef7ce7912e41314eb4443c60bbed315fb9d84b41da189d8f62e70164112f203' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'Yq58OEvgDzDVGhKm3Eb' LIMIT 1
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (11.3ms)
+  Rendered users/new.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 173.3ms (Views: 72.3ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:03:37 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (3.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '357039fb812d75b0d82fae91ab6a13602075fb77e929dd3cbe6191d722ac0246be754405706ffae7a226c1fdd052e393e848370e6154ac687c57ddd06fdc6850' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'wF0itrxaoJuOaKzgwx7' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (16.0ms)
+  Rendered users/new.html.erb within layouts/application (72.8ms)
+Completed 200 OK in 280.0ms (Views: 86.9ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:04:00 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '5623b1ce31ece275ef697c788ce472ace843577c8c33b88e98a9ff417f1bbbdb4649abdf73e4954c19a06c35e90a2ddb2a856fb4ba2578f4487ce8f5aa696dea' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'sE2GUocYVWclD6RgM6n' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (7.3ms)
+  Rendered users/new.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 123.3ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:05:16 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'd4269e634f9b28c0f9f3a5657c041ac52b04eaeb7c0d70829548ef2da98776efa5639ad21ae36a934bda15982826d0e229cad0ab2fbdf985eb347f8c9ab98309' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'rwRMKUBR6rMQhfIIWo' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (27.7ms)
+  Rendered users/new.html.erb within layouts/application (73.6ms)
+Completed 200 OK in 116.7ms (Views: 96.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:06:43 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '732f7c460f54e1591ae51cc8610831988a3c8badd87c8f3f21b8c1f7a677764e1d402687b17be21b6e06a4536b952b9ac61b0ccafea31d97c9f1fc832b7a4387' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'Bv2w0Tl8rlTO8bmHAc8' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 151.1ms (Views: 118.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:06:51 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'b2335701368a98481385e405449b9651d53830a65aaf1440222f207dbc49b2ae8249a1502a10e785b93967bb8e8d850f8759ce7d465d8f70a070db58bbb82ae0' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'OGzr53sbVIEqU7EVfa4' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 23.8ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:12 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'd57770298c34bc48b4c92c8f52c37b39ab0872cedfbcf06c4e0560cc4c068bd3f045e7e7d56b5b82415fbe23a3be6cd19b7011fb33549d4a1dda04469fd98ae1' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'tNiVrWIgmyG9HkaNeqou' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 24.3ms (Views: 13.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:19 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '19974a133cc21047759fb2e0cfd8d8a80f9863849052c3419927b38bb3b9b9e01923b52756778a6b85e2b8babb388a7e835ff89d81006c7aebf82f4c3bbd967f' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'Ymni37sdPBc9QfOZAd7' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 18.0ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:26 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'fe6656e7c9adb4d2c7f5d6e4a0c2ef0825a368d122f65c65cedf5bbb60fc06441ea4cf28f7ae47e60551494b612b0e2c9371017ee21f327f716a2b106cb26605' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'nclf1vKnOZ46M1ScRbIc' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 21.5ms (Views: 12.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:45 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'b95971dcdcc8e3babf96f816d6293b554699406b9358467c159ada8e9e868d897efed440424f760f8c5f82bae497beb71ece647896576122dc229f3f26275b9b' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'RbHkNdDvKoqwUkFRkCWe' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 22.2ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:53 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '7e4f39a1848e2a38188a4ee3725df7510973592ade911877c98f38858c066741b5c13a59c4997084921fdc66d8fec7bef1d677847e054ba652f65a9d4477a673' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'ZdHO0pLC2dd7eNKjwENy' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 26.8ms (Views: 13.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:07:59 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '8ee7b2c568c2d06d5b40a9557b170a3f0e868cfb14ff43fdaef2f42cdfb266dfe0e2f9f11044d405e50afcc041974918fa9632d28e13a2447276e87b0d3ff53e' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '5tFLMmMfWwEAnejZ7YU' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 26.2ms (Views: 17.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:08:03 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11.5ms (Views: 7.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:08:05 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6.8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:08:06 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '2424c01fede58f1b229578d6c88ec6c49e14a2bde094ec47f9595a553d9095537272c2e5abf71e6448f27739b4a81cf7a1fb21e3a2cb7f495acfd26f09eae2ac' LIMIT 1
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '9axIIGYb2GWN3XPR6Syh' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 24.0ms (Views: 12.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:08:11 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10.3ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:08:13 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 9.6ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:08:57 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 14.6ms (Views: 12.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:09:04 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11.5ms (Views: 9.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:09:10 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 10.1ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:09:14 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 14.0ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:09:15 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '83e17976421e1b952e376d2d360ccd5e9fdd3dc1a7a4e95642e26700f5b8616f8ef0d3229e4fe30c3686140c81cfcc404967a68aac3c3e4792a0c4e83de9beeb' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'EnE9jjFIKXoyJVVs70hx' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 28.8ms (Views: 11.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:09:35 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (7.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24.4ms (Views: 11.4ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:10:14 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (7.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 82.0ms (Views: 57.0ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:15:38 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 55.8ms (Views: 46.5ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:15:43 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 39.1ms (Views: 24.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:15:45 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (389.4ms)
+Completed 200 OK in 416.0ms (Views: 404.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:16:16 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 32.1ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:16:17 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 23.4ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:16:49 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 21.5ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:16:49 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22.5ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:17:30 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 21.1ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:17:53 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 39.1ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:18:21 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 30.8ms (Views: 25.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:19:21 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 32.7ms (Views: 27.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:19:43 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 20.3ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:20:10 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 23.4ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:20:24 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12.2ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:21:18 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 22.9ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:22:26 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 16.6ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:22:38 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 12.4ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:23:16 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 22.7ms (Views: 18.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:23:24 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 14.1ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:23:51 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 20.9ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:23:55 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (6.9ms)[0m  begin transaction
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (3.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'a6d9f6f5ac3472de37f635303727f6367a3453d62c891f061dbd2d27df3e31ac5f29c66deca1551cb03db9a8b09c25c04e5a5d1f3efb997171cb0557d6800c7c' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'xQdCJBIgLfPCITRXU' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 148.4ms (Views: 27.6ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:24:30 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (4.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '17765d17de6abd0728ceeee20303075579477556179c8fc879a373799a93df1b586187c87db41c1d2530eed28d11933006ccc40b75cc450f569fc28973743c61' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '9VXNgUVjVqV1OMlwKFcs' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/new.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 117.8ms (Views: 66.0ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:25:04 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (5.7ms)[0m  begin transaction
+  [1m[36mUser Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'b81b2e92095b66ec866514fe9039d700d0b60a7555d3da61135e0d26d46fdd8a22a429ca2d01c4d00bf255983df9b7eda9776c0cf84c90adaa54373dc0aacbe9' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'IJxr32Zohjmm7YKfZxQb' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (5.3ms)
+  Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 92.8ms (Views: 49.6ms | ActiveRecord: 8.3ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:25:37 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (3.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.7ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '4d3a98af2272cf844702b972aa56454d86cd53795102eb6e4e9c5ca528e424e2828aad23b60f5ce03286c6c3aba1d3904a7440cecad03560005d57a34efc2fe2' LIMIT 1[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'SC0Hrc5Kj8aIiy5chaLw' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (8.2ms)
+  Rendered users/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 285.4ms (Views: 235.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:25:48 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 20.9ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:25:58 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 55.0ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:26:09 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 34.3ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:26:13 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (4.5ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '263764c644ec22ed7160f132d9077a462330d6c33b3b9df723dcd2ab5f02732dfdefe4239676f2792e6d4feb508a75bf9beff635229c33af833e1b5b5715c816' LIMIT 1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '460WfAXf7lZWF8VCBb' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (4.9ms)
+  Rendered users/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 80.4ms (Views: 38.5ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:26:51 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '18bf44ff19b8db2589d461e6b1581403aae84e65252bfd9a5b2f3333bbe21399bb1050fd11e9ec26d4c5e2f070ca3b67434923fcc9b4ff67879bff6c8e5f7754' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'B6bvv2iX6ZuzIQUIWXud' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 65.2ms (Views: 40.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:27:21 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'f348bc5b5d036bf42f9d801284ad0bc2f06e03087814042ed130f9cfe6fea1d0868d13c5f145808c14be5640472dca311351d4ec4000e2ef48dcab9fe70a77b8' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'OMuqhbUcEijTJUwdPBNr' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 52.2ms (Views: 30.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:27:50 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'fe193e8f06e776f21ed8be7fb41676d4446179391d3f81555bc29c2e0d6cc76358e8a0d4d911bdd6fd9d05573f1556daea3d0c43f2e03648a140d35e29c37977' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '7xmCgQmkXgbDEk18gMCw' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.6ms)
+  Rendered users/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 24.5ms (Views: 12.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:27:57 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 43.8ms (Views: 34.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:28:01 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (1.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'd399e6533d299badc64b2307d65bbafd743adc5e3acc3ff16342cdad7744effee66224b1c13405d6d1b5343642ea7d0c554a838d26a0f0c9343a39af9997ffee' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'LvFZf930LkBGY2gW5yS' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 56.9ms (Views: 36.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:28:02 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 24.1ms (Views: 21.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:28:33 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 34.6ms (Views: 26.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:28:35 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 16.5ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:28:38 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 18.1ms (Views: 15.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:28:48 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 17.8ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:29:31 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (4.5ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 20.1ms (Views: 13.1ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:30:02 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (4.9ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 20.1ms (Views: 12.4ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:30:29 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 16.7ms (Views: 13.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:30:37 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 17.5ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:30:43 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (3.8ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 29.8ms (Views: 23.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-17 23:30:43 +0300
+Processing by CollectionsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :check_public_access rendered or redirected
+Completed 302 Found in 16.0ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:30:43 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8.7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:31:32 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10.7ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:31:47 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 31.6ms (Views: 26.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:32:08 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 23.3ms (Views: 18.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:32:41 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 15.8ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:34:36 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (4.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 38.6ms (Views: 20.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:34:44 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 45.3ms (Views: 37.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-05-17 23:34:51 +0300
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 17.1ms (Views: 14.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:35:02 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 22.6ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:36:04 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 437.0ms (Views: 62.9ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:36:16 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (3.8ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 22.2ms (Views: 14.3ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:38:01 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 28.1ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:38:23 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 23.4ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:38:35 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 33.9ms (Views: 29.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2016-05-17 23:39:19 +0300
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user_session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Giriş Yap"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 14.5ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:39:20 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 26.3ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:39:22 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (3.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (3.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '875ffe5147f71d5ae17d00c2bc966e944ec2ad71d57fc0ba0bedcd1ca0d7843c562920b2945f21271fe8fd6b017bd0d638883a99a2e0833621fa1c5bf20ddd54' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'bY46ujVgWzXJV8hJpV' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 109.5ms (Views: 33.2ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:39:29 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 24.6ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:39:32 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12.1ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:39:41 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 28.5ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:39:44 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (1.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'a4310028145ead3a32e1edf1e832b50bf0e78ef6ca948787634d0de8799f25b6e7c691028c26455a7fc686cf76993158c7930d33769a1e76b9e5c7a8e49d36d6' LIMIT 1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'GNJOY83jP5P1Ssvw6SNc' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 47.0ms (Views: 30.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:39:46 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered user_sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9.6ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-05-17 23:40:08 +0300
+Processing by UserSessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "commit"=>"Giriş"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered user_sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 14.3ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/account/new" for 127.0.0.1 at 2016-05-17 23:40:09 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 10.1ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:40:11 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'f86d80adf523d931bf8f6cccea7f92618381631c77ae27540733cf313ff11f28830835c90859cbf651269c8f60d467f50da77cb6a781a55530d168182defb8f5' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'C6YFtUFneiqTDWld3E97' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 27.8ms (Views: 9.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:41:21 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '7fe1e69e6b5c6631c529131a75cbb8a995b0535ccfae591b298ecb385fa50c76283b2b9b691e03aeced3162edbd0b5d622099582cb1c776c56ad4ce652ec01a9' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'IPpGte5KFxesTUocYZMX' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 25.7ms (Views: 15.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:41:28 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '186990f7b567332a3964c62bab1c64d06247aad5894df2a51850535f8da679ce207d7b20656cdb42447d0e8ee6471249aeee5e8bfaf1293b48c2b687ed30ea6e' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = '5MBfaeTpY3dOUDX8bNU' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 23.9ms (Views: 11.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:41:33 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = 'bc299dd34e240a432a7c64a274b190f69922aa81addfcc9ed15a398c8e63b7763c95b266197722d178fe092e44644b20cc462c9e7c36003061158187b92403ac' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'I0ssYXRon9Mew9nahnlm' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 25.9ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/account" for 127.0.0.1 at 2016-05-17 23:41:48 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1I41H9mKC2QLvThG3AiNUXkwdaY8RLpTXwNHM3bl0aw=", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Kayıt"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."persistence_token" = '0a81022e2851d7dcdb14eef5b07b9352ac723ba21cc14b86d9f99668fed6f37746f77c365995db8ddf89f31e48464a046b3bce4830197a881680b5f8873519bd' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."single_access_token" = 'N5GNOevy1lYQY9FOhFI1' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 19.8ms (Views: 11.4ms | ActiveRecord: 0.7ms)
