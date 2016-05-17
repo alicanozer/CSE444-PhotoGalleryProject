@@ -48,8 +48,9 @@
     </table>
 
     <p><%= f.submit "Gönder" %></p>
+    <br/><%= link_to "Geri git #{@album.title}", @album %>
 <% end %>
 
-<br/><%= link_to "Geri git #{@album.title}", @album %>
+
 </body>
 </html>

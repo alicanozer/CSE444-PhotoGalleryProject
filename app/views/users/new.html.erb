@@ -34,7 +34,7 @@
   }
   .login {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     margin: -150px 0 0 -150px;
     width:300px;
@@ -70,16 +70,16 @@
 <div class="login">
 
 <h1>Kayıt Ol</h1>
-  &nbsp;&nbsp;&nbsp;
-  <% if !current_user %>
-      <%= link_to '  Giriş', login_path %>
-  <% end %>
+
 
 <%= form_for @user, :url => account_path do |f| %>
     <%= f.error_messages %>
     <%= render :partial => "form", :object => f %>
     <%= f.submit "Kayıt" %>
 <% end %>
+  <%= form_for @user, :url => login_path do |f| %>
+      <%= f.submit "Giriş" %>
+  <% end %>
 </div>
 
 </body>

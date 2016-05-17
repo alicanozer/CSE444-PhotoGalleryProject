@@ -8,6 +8,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-family: inherit;
     vertical-align: baseline;
 }
+label{
+    color: #FFFFFF;
+
+}
 
 body {
     line-height: 1.5;
@@ -47,7 +51,7 @@ a img {
 body {
     font-size: 75%;
     color: #222;
-    background: #fff;
+    background: #7F1734;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -113,8 +117,8 @@ a:focus, a:hover {
 }
 
 a {
-    color: #009;
-    text-decoration: underline;
+    color: #fdfdff;
+    text-decoration: none;
 }
 
 blockquote {
