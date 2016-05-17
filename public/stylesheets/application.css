@@ -8,7 +8,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-family: inherit;
     vertical-align: baseline;
 }
-label{
+
+label {
     color: #FFFFFF;
 
 }
@@ -291,7 +292,6 @@ caption {
     width: 985px;
     margin: 0 auto;
 }
-
 
 div#header h1 {
     text-transform: uppercase;

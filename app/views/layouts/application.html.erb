@@ -2,11 +2,12 @@
 <html lang="en">
 <style type="text/css">
 
-  lr{
+  lr {
     font-size: larger;
     color: red;
   }
-  b{
+
+  b {
     color: darkblue;
   }
 
@@ -30,23 +31,23 @@
 </head>
 <body>
 <div align="center">
-  <%= link_to image_tag('/up.JPG',align: 'middle',width:'1000px', height: '150px'), root_path %>
+  <%= link_to image_tag('/up.JPG', align: 'middle', width: '1000px', height: '150px'), root_path %>
 
 </div>
 <div id="container">
-    <% if current_user %>
-        <%= breadcrumbs %>
-    <% end %>
+  <% if current_user %>
+      <%= breadcrumbs %>
+  <% end %>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <% if current_user %>
 
       <a class="lr"><%= link_to "Çıkış Yap", logout_path %></a>
   <% end %>
 
-    &nbsp;
-    <%= yield :action_links %>
-    &nbsp;
-    <%= yield %>
+  &nbsp;
+  <%= yield :action_links %>
+  &nbsp;
+  <%= yield %>
 
 </div>
 
