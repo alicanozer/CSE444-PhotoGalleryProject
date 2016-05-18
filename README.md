@@ -1,2 +1,2 @@
 # PhotoGalleryProject
-live site is # gtu-se2.herokuapp.com
+live site is # www.gtu-se2.herokuapp.com
